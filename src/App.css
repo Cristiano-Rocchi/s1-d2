@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.img-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+}
+.cardStyle {
+  background-color: #f8f9fa;
+}
