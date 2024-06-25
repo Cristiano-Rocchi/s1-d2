@@ -6,7 +6,7 @@ const AllTheBooks = () => {
     <Container fluid="md">
       <Row>
         {libriHorror.map((book) => (
-          <Col lg={4} md={6} sm={12} key={book.asin} className="mb-4">
+          <Col lg={3} md={6} sm={12} key={book.asin} className="mb-4">
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src={book.img} />
               <Card.Body>
