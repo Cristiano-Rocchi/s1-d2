@@ -17,7 +17,6 @@ const AllTheBooks = () => {
               <Card.Body>
                 <Card.Title>{book.title}</Card.Title>
                 <Card.Text>{"prezzo " + book.price + "€"}</Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </Col>
