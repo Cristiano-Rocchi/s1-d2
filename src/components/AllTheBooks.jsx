@@ -1,4 +1,4 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
+/* import { Card, Col, Container, Row } from "react-bootstrap";
 import libriHorror from "../data/horror.json";
 
 const AllTheBooks = () => {
@@ -25,4 +25,25 @@ const AllTheBooks = () => {
     </Container>
   );
 };
+export default AllTheBooks; */
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import libriHorror from "../data/horror.json";
+import SingleBook from "./SingleBook";
+
+const AllTheBooks = () => {
+  return (
+    <Container fluid="md">
+      <h1 className="my-4">HORROR</h1>
+      <Row>
+        {libriHorror.map((book) => (
+          <Col lg={3} md={6} sm={12} key={book.asin} className="mb-4">
+            <SingleBook book={book} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
+};
+
 export default AllTheBooks;
