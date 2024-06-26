@@ -6,7 +6,7 @@ class SingleBook extends React.Component {
     selezione: false,
   };
 
-  selectex = () => {
+  selected = () => {
     this.setState((state) => ({
       selezione: !state.selezione,
     }));
@@ -22,11 +22,12 @@ class SingleBook extends React.Component {
           variant="top"
           src={book.img}
           className="rounded img-cover"
-          onClick={this.selectex}
+          onClick={this.selected}
           style={{ cursor: "pointer" }}
         />
         <Card.Body>
           <Card.Title>{book.title}</Card.Title>
+          <Card.Text>{"prezzo " + book.price + "€"}</Card.Text>
         </Card.Body>
       </Card>
     );
