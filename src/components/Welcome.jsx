@@ -1,6 +1,6 @@
 const Welcome = () => {
   return (
-    <div class="fade alert alert-warning show" role="alert">
+    <div className="fade alert alert-warning show" role="alert">
       Mani in alto questa è una rapina
     </div>
   );
