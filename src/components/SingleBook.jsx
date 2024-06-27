@@ -17,7 +17,7 @@ class SingleBook extends React.Component {
     const { selezione } = this.state;
 
     return (
-      <Card className={`mb-4 ${selezione && "border border-danger"}`}>
+      <Card className={selezione && "border border-danger"}>
         <Card.Img
           variant="top"
           src={book.img}
