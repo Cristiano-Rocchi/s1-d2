@@ -12,6 +12,7 @@ function App() {
       <MyNav />
       <Welcome />
       <BookList books={LibriHorror} />
+
       <MyFooter firm="kun.spa 131213121312" />
     </div>
   );
